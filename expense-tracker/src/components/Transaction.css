@@ -1,0 +1,29 @@
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0.6;
+  cursor: pointer;
+  padding: 1rem;
+  border-left: solid medium transparent;
+  transition: opacity 0.5s ease, border 0.5s ease;
+}
+
+.transaction p:first-child {
+  text-align: left;
+}
+
+.transaction p:last-child {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.transaction:hover {
+  opacity: 1;
+  border-left-color: var(--blue-color);
+}
+
+.transaction:nth-child(odd) {
+  background-color: var(--body-color);
+}

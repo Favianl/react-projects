@@ -1,0 +1,92 @@
+:root {
+  --body-color: #eff2f9;
+  --main-color: #ffffff;
+  --text-color: #191a1d;
+
+  --gray-color: #9597a1;
+  --blue-color: #5458f7;
+  --income-color: #237804;
+  --expense-color: #cf1322;
+  --radius-container: 20px;
+  --radius-10: 10px;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+.App {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  width: 100vw;
+  min-width: 350px;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+.dark {
+  --body-color: #2f2f31;
+  --main-color: #191a1d;
+  --text-color: #ffffff;
+}
+
+h1 {
+  padding: 2rem 0px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+select,
+option {
+  text-transform: capitalize;
+}
+
+.not-found,
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 1.5rem;
+  background-color: var(--main-color);
+  border-radius: var(--radius-container);
+}
+
+.not-found {
+  text-align: center;
+  font-style: italic;
+}
+
+.btn {
+  background-color: var(--blue-color);
+  color: #ffffff;
+  padding: 0.6rem;
+  border: none;
+  border-radius: var(--radius-10);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.empty-message {
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 350px) {
+  #root {
+    overflow-x: initial;
+  }
+}

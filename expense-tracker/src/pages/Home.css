@@ -1,0 +1,89 @@
+.finances-total {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.finances-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+}
+
+.finances-amount:nth-child(3) {
+  border: thin solid var(--blue-color);
+  border-radius: var(--radius-10);
+}
+
+.balance-text {
+  color: var(--blue-color);
+}
+
+.income-color,
+.income-text {
+  color: var(--income-color);
+}
+
+.expense-text,
+.negative-amount,
+.expense-color {
+  color: var(--expense-color);
+}
+
+.income-text,
+.expense-text,
+.balance-text {
+  font-size: 0.9rem;
+}
+
+.add-transaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  align-self: center;
+}
+
+.transactions {
+  text-align: center;
+}
+
+.transactions-message {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.transaction-list {
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+
+.view-history {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+  .finances-total {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 0.5rem;
+  }
+
+  .finances-amount:nth-child(1),
+  .finances-amount:nth-child(2) {
+    order: 1;
+  }
+
+  .add-transaction {
+    justify-self: center;
+  }
+}

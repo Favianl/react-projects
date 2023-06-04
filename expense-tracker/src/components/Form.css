@@ -1,0 +1,77 @@
+.type-selection {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  border: thin solid var(--blue-color);
+  border-radius: var(--radius-10);
+  overflow: hidden;
+}
+
+.type-selection label {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 500;
+  transition: background-color 0.5s ease-in-out;
+  flex-basis: 50%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.type-selection input {
+  display: none;
+}
+
+#income:checked ~ .income-label,
+#expense:checked ~ .expense-label {
+  background-color: var(--blue-color);
+  color: #ffffff;
+}
+
+form > label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+#amount,
+#description,
+#category {
+  width: 100%;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+.input-error {
+  color: var(--expense-color);
+  margin-bottom: 1rem;
+}
+
+#category {
+  margin-bottom: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.delete-btn,
+.submit-btn {
+  font-size: 1.1rem;
+  flex-basis: 40%;
+}
+
+.submit-btn:disabled {
+  background-color: var(--gray-color);
+  cursor: default;
+  opacity: 1;
+}
+
+.delete-btn {
+  background-color: var(--expense-color);
+}

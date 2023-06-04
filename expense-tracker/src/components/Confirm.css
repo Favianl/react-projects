@@ -1,0 +1,15 @@
+.confirm-text {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.confirm-options {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+}
+
+.cancel-btn {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
