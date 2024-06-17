@@ -6,4 +6,4 @@
 
 ### Collaborative Projects:
 * [Guardianes del Bosque](https://guardianesdelbosque.vercel.app/)
-* [Cashflow](https://deploy-one-ruddy.vercel.app/)
+* [Cashflow](https://favianl.github.io/cashflow-demo/#/home)
